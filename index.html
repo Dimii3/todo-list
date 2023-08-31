@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" content="todo, todo list" />
+		<meta name="author" content="Dimi" />
+		<meta
+			name="description"
+			content="Todo list, plot for yourself for each day. Don't waste time and plan everything" />
+		<title>Todo | Pday</title>
+		<!-- FAVICO  -->
+		<link rel="icon" type="image/x-icon" href="/img/icons8-day-and-night-48.png" />
+		<!-- ICONS  -->
+		<script src="https://kit.fontawesome.com/1ddfd708d9.js" crossorigin="anonymous"></script>
+		<!-- FONTS  -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+			rel="stylesheet" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="/css/main.css" />
+	</head>
+	<body>
+		<main>
+			<div class="overlay">
+				<!-- LEFT-SIDE-MENU -->
+				<div class="menu-left-side">
+					<div class="menu-left-side__logo">
+						<img src="/img/icons8-day-and-night-48.png" alt="logo" />
+						<p class="logo-name">Pday</p>
+					</div>
+					<div class="menu-left-side__socials">
+						<a href="#" class="social-link"><i class="fa-brands fa-discord"></i></a>
+						<a href="#" class="social-link"><i class="fa-solid fa-heart"></i></a>
+						<a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+						<a href="#" class="social-link"><i class="fa-solid fa-bell"></i></a>
+					</div>
+				</div>
+				<!-- RIGHT SIDE CONTENT  -->
+				<div class="container">
+					<div class="menu-top-side">
+						<div class="menu-top-side__search">
+							<input type="text" class="search" placeholder="Searching for" />
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</div>
+						<div class="menu-top-side__controls">
+							<div class="menu-top-side__amount-of-tasks">
+								<i class="fa-solid fa-note-sticky"></i> <span class="amount-of-tasks"></span>
+							</div>
+							<button class="add">Add new Task</button>
+						</div>
+					</div>
+					<div class="todo-box"></div>
+				</div>
+				<!-- MODAL TO ADD NEW TASK  -->
+				<div class="add-new-task">
+					<p class="add-new-task__title">New Task</p>
+					<p class="add-new-task__description">
+						Enter the title and content of the task you want to pin to the board
+					</p>
+					<p class="add-new-task__warning">Check if you are sure you have filled everything in</p>
+					<div class="title-box group">
+						<label for="title">Enter the title of the task</label>
+						<input type="text" id="title" placeholder="Learning english" />
+					</div>
+					<div class="description-box group">
+						<label for="description">Add content to your task</label>
+						<input
+							type="text"
+							id="description"
+							placeholder="Learning 20 new English vocabulary words" />
+					</div>
+					<button class="add-task">Add task</button>
+					<button class="close" aria-label="Button to close">X</button>
+				</div>
+			</div>
+
+			<!-- EDIT BOX  -->
+			<div class="edit-task">
+				<p class="edit-task__warning">You must fill in all the blanks</p>
+				<div class="title-box group">
+					<label for="edit-title">Edit your task title</label>
+					<input type="text" id="edit-title" placeholder="New title" />
+				</div>
+				<div class="description-box group">
+					<label for="edit-description">Edit your task content</label>
+					<input type="text" id="edit-description" placeholder="New task content" />
+				</div>
+				<div class="task__controls">
+					<button class="btn-control edit-confirm">Edit</button>
+					<button class="btn-control cancel">Cancel</button>
+				</div>
+			</div>
+		</main>
+		<!-- JS SCRIPTS  -->
+		<script src="/js/main.js"></script>
+	</body>
+</html>
